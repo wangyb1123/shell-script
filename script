@@ -3,3 +3,7 @@ awk -F '[: |]' '{print $1,$3":"$4":"$5,$21,$24}' my_log.log
 
 wget https://www-us.apache.org/dist/spark/spark-2.4.0/spark-2.4.0-bin-hadoop2.7.tgz
 tar zxvf spark-2.4.0-bin-hadoop2.7.tgzls
+
+check TCP and inspect it with Wireshark https://wiki.wireshark.org/FrontPage
+tcpdump -leni any -w capture.pcap
+
